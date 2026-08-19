@@ -1,0 +1,23 @@
+{
+  "name": "slop-detector",
+  "version": "0.1.0",
+  "description": "Run Pangram AI-detection checks against pages on zeke.sikelianos.com",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "slop-detector": "./bin/slop-detector.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "urls": "node bin/slop-detector.js urls",
+    "check": "node bin/slop-detector.js check",
+    "scan": "node bin/slop-detector.js scan",
+    "report": "node bin/slop-detector.js report"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.5"
+  }
+}
