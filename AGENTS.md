@@ -24,7 +24,7 @@ and why.
 - `src/extract.js` — fetches a page's HTML and extracts prose text (strips nav/header/code/etc)
 - `src/pangram.js` — thin client for the Pangram REST API (single `predict()`, bulk job flow, plagiarism check)
 - `src/report.js` — merges Pangram results with page metadata into sorted rows + a markdown report
-- `results/` — gitignored output directory for scan results (JSON + markdown per run)
+- `results/` — tracked output directory for scan results (JSON + markdown per run, one timestamped pair per `scan`)
 
 ## How extraction works
 
@@ -60,5 +60,14 @@ If the site's markup changes (e.g. renamed classes), update the selectors in
 
 - `SITE_URL` defaults to `https://zeke.sikelianos.com` but can point at a
   staging deploy for testing.
-- `scan` writes timestamped files to `results/`, which is gitignored. Commit
-  specific reports manually if you want to keep one around.
+- `scan` writes timestamped files to `results/` and they're committed to the
+  repo as a historical record. Don't run `scan` casually; each full-site run
+  costs real Pangram credits (see below).
+- `scan` defaults to the `"default"` model (Pangram 3), which bills per
+  1,000-word block at $0.05, roughly 10x cheaper than `pangram-4`'s per-100-word
+  billing. A full-site scan (~83k words across ~53 pages) costs about
+  $5-6 on `default` vs $40+ on `pangram-4`. Pass `--model pangram-4` for
+  higher-fidelity spot checks via `check`, which defaults to `pangram-4`
+  since single-page checks are cheap regardless of model.
+- Pangram has no documented endpoint for checking remaining account credit
+  balance; check https://www.pangram.com/plan manually before a big `scan`.

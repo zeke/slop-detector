@@ -18,7 +18,7 @@ try {
       await cmdUrls()
       break
     case 'check':
-      await cmdCheck(args[0])
+      await cmdCheck(args)
       break
     case 'scan':
       await cmdScan(args)
@@ -40,8 +40,10 @@ function printUsage () {
 
 Commands:
   urls                    List every URL from the site's sitemap.xml
-  check <url>             Run a single-page Pangram AI-detection check
-  scan [--limit N]        Extract and check every page on the site via Pangram's bulk API
+  check <url> [--model M] Run a single-page Pangram AI-detection check (default model: pangram-4)
+  scan [--limit N] [--model M]
+                          Extract and check every page on the site via Pangram's bulk API
+                          (default model: default/Pangram 3, ~10x cheaper per word than pangram-4)
   report <results.json>   Regenerate a markdown report from saved results
 
 Environment:
@@ -54,8 +56,10 @@ async function cmdUrls () {
   for (const url of urls) console.log(url)
 }
 
-async function cmdCheck (url) {
-  if (!url) throw new Error('Usage: slop-detector check <url>')
+async function cmdCheck (args) {
+  const url = args[0]
+  const model = parseFlag(args, '--model') || 'pangram-4'
+  if (!url) throw new Error('Usage: slop-detector check <url> [--model pangram-4|default]')
 
   console.log(`Fetching ${url}...`)
   const page = await extractPage(url)
@@ -66,8 +70,8 @@ async function cmdCheck (url) {
     return
   }
 
-  console.log('Checking with Pangram...')
-  const result = await predict(page.text)
+  console.log(`Checking with Pangram (${model})...`)
+  const result = await predict(page.text, { model })
 
   console.log('')
   console.log(`Headline: ${result.headline}`)
@@ -94,6 +98,7 @@ async function cmdCheck (url) {
 
 async function cmdScan (args) {
   const limit = parseIntFlag(args, '--limit')
+  const model = parseFlag(args, '--model') || 'default'
 
   console.log(`Fetching sitemap from ${SITE_URL}...`)
   let urls = await fetchSitemapUrls(SITE_URL)
@@ -113,9 +118,10 @@ async function cmdScan (args) {
   }
 
   const checkable = pages.filter(page => !page.skipped)
-  console.log(`Submitting ${checkable.length} pages to Pangram's bulk API...`)
+  const totalWords = checkable.reduce((sum, page) => sum + page.wordCount, 0)
+  console.log(`Submitting ${checkable.length} pages (${totalWords} words) to Pangram's bulk API using "${model}"...`)
 
-  const bulk = await submitBulk(checkable.map(page => ({ id: page.url, text: page.text })))
+  const bulk = await submitBulk(checkable.map(page => ({ id: page.url, text: page.text })), { model })
   console.log(`Bulk job ${bulk.bulk_id} queued (${bulk.accepted_items.length} accepted, ${bulk.failed_items.length} failed).`)
 
   await waitForBulk(bulk.bulk_id, {
@@ -132,7 +138,7 @@ async function cmdScan (args) {
   const jsonPath = path.join(outDir, `${stamp}.json`)
   const mdPath = path.join(outDir, `${stamp}.md`)
 
-  await writeFile(jsonPath, JSON.stringify({ siteUrl: SITE_URL, generatedAt: new Date().toISOString(), rows }, null, 2))
+  await writeFile(jsonPath, JSON.stringify({ siteUrl: SITE_URL, model, generatedAt: new Date().toISOString(), rows }, null, 2))
   await writeFile(mdPath, markdown)
 
   console.log('')
@@ -147,9 +153,14 @@ async function cmdReport (file) {
 }
 
 function parseIntFlag (args, name) {
+  const value = parseFlag(args, name)
+  return value == null ? null : parseInt(value, 10)
+}
+
+function parseFlag (args, name) {
   const index = args.indexOf(name)
   if (index === -1) return null
-  return parseInt(args[index + 1], 10)
+  return args[index + 1]
 }
 
 function pct (value) {

@@ -32,3 +32,9 @@ node bin/slop-detector.js scan --limit 5
 # regenerate a markdown report from a saved results file
 node bin/slop-detector.js report results/2026-08-18T00-00-00-000Z.json
 ```
+
+## Results
+
+Each `scan` run writes a timestamped JSON + markdown pair to `results/`,
+which is committed to the repo as a historical record. See
+[results/](./results) for past runs.
