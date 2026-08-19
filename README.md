@@ -1,40 +1,12 @@
 # slop-detector
 
-Runs [Pangram](https://www.pangram.com) AI-detection checks against pages on
-[zeke.sikelianos.com](https://zeke.sikelianos.com), as a way to see whether
-(and where) the site's AI-assisted writing gets flagged.
+The repo contains code demonstrating how to use the [Pangram](https://www.pangram.com) API to do AI-detection checks against webpages
+
+I used this to analyze my own website at [zeke.sikelianos.com](https://zeke.sikelianos.com) to see which pages were AI-generated and which were written by a human (me).
+
+See [zeke.sikelianos.com/slop-detector](https://zeke.sikelianos.com/slop-detector) for the writeup.
 
 See [AGENTS.md](./AGENTS.md) for technical details.
 
-## Setup
+![Pangram developer dashboard showing usage and spend](./assets/pangram-dashboard.jpg)
 
-```bash
-npm install
-cp .env.example .env
-# then fill in PANGRAM_API_KEY in .env
-```
-
-## Usage
-
-```bash
-# list every URL on the site (from sitemap.xml)
-node bin/slop-detector.js urls
-
-# check a single page
-node bin/slop-detector.js check https://zeke.sikelianos.com/solitaire
-
-# scan the whole site via Pangram's bulk API, save JSON + markdown to results/
-node bin/slop-detector.js scan
-
-# scan just the first N pages (useful for testing)
-node bin/slop-detector.js scan --limit 5
-
-# regenerate a markdown report from a saved results file
-node bin/slop-detector.js report results/2026-08-18T00-00-00-000Z.json
-```
-
-## Results
-
-Each `scan` run writes a timestamped JSON + markdown pair to `results/`,
-which is committed to the repo as a historical record. See
-[results/](./results) for past runs.
