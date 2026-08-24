@@ -1,0 +1,18 @@
+{
+  "path": "/france",
+  "slug": "france",
+  "url": "https://zeke.sikelianos.com/france",
+  "title": "Lycée Polyvalent Alphonse Benoit",
+  "wordCount": 85,
+  "textHash": "b02344b3b8a97077079a059d6b4fc92a0a931fb84b5e7396beee980c4d2abdf6",
+  "model": "default",
+  "checkedAt": "2026-08-19T03:31:06.501Z",
+  "stage": "STAGE_SUCCESS",
+  "error": null,
+  "headline": "Human Written",
+  "fractionAi": 0,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 1,
+  "windowsComplete": false,
+  "windows": []
+}

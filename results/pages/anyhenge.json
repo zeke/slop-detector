@@ -1,0 +1,18 @@
+{
+  "path": "/anyhenge",
+  "slug": "anyhenge",
+  "url": "https://zeke.sikelianos.com/anyhenge",
+  "title": "Anyhenge",
+  "wordCount": 417,
+  "textHash": "a931d42f7851c01d1ad342bc05b3a4b7d0baf285210c90078923eb5f90df3207",
+  "model": "default",
+  "checkedAt": "2026-08-19T03:31:06.501Z",
+  "stage": "STAGE_SUCCESS",
+  "error": null,
+  "headline": "Human Written",
+  "fractionAi": 0,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 1,
+  "windowsComplete": false,
+  "windows": []
+}

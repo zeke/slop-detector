@@ -1,3 +1,5 @@
+import { createHash } from 'node:crypto'
+
 const TEXT_BASE_URL = 'https://text.external-api.pangram.com'
 
 function apiKey () {
@@ -38,7 +40,7 @@ function sleep (ms) {
  * Submit one text for AI-detection and poll until it completes.
  * Returns the completed task payload (see docs.pangram.com/api-reference/ai-detection).
  */
-export async function predict (text, { model = 'pangram-4', publicDashboardLink = false, timeout = 300_000, pollInterval = 1000 } = {}) {
+export async function predict (text, { model = 'default', publicDashboardLink = false, timeout = 300_000, pollInterval = 1000 } = {}) {
   const { task_id: taskId } = await request('/task', {
     method: 'POST',
     body: JSON.stringify({ text, model, public_dashboard_link: publicDashboardLink })
@@ -54,10 +56,15 @@ export async function predict (text, { model = 'pangram-4', publicDashboardLink 
 }
 
 /** Submit many texts as one bulk job. `items` is [{ id, text }]. */
-export async function submitBulk (items, { model = 'pangram-4' } = {}) {
+export async function submitBulk (items, { model = 'default' } = {}) {
+  const body = JSON.stringify({ items, model })
+
   return request('/bulk', {
     method: 'POST',
-    body: JSON.stringify({ items, model })
+    body,
+    // Required by the API. Deriving it from the payload means a retried run
+    // with identical content is deduped by Pangram instead of billed twice.
+    headers: { 'Idempotency-Key': createHash('sha256').update(body).digest('hex') }
   })
 }
 

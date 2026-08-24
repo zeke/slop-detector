@@ -1,0 +1,18 @@
+{
+  "path": "/vibe-coding-popup",
+  "slug": "vibe-coding-popup",
+  "url": "https://zeke.sikelianos.com/vibe-coding-popup",
+  "title": "Vibe Coding Popup",
+  "wordCount": 357,
+  "textHash": "b714dcedf48906ca58ed89a3e09709685347567f5134681955d33321c49e07d2",
+  "model": "default",
+  "checkedAt": "2026-08-19T03:31:06.501Z",
+  "stage": "STAGE_SUCCESS",
+  "error": null,
+  "headline": "Human Written",
+  "fractionAi": 0,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 1,
+  "windowsComplete": false,
+  "windows": []
+}

@@ -1,0 +1,18 @@
+{
+  "path": "/semver.io",
+  "slug": "semver.io",
+  "url": "https://zeke.sikelianos.com/semver.io",
+  "title": "semver.io",
+  "wordCount": 50,
+  "textHash": "31cc46c8d444db03ef62f4821e1bc313335172805592d900d54f755226a540d3",
+  "model": "default",
+  "checkedAt": "2026-08-19T03:31:06.501Z",
+  "stage": "STAGE_SUCCESS",
+  "error": null,
+  "headline": "Human Written",
+  "fractionAi": 0,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 1,
+  "windowsComplete": false,
+  "windows": []
+}

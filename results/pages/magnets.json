@@ -1,0 +1,18 @@
+{
+  "path": "/magnets",
+  "slug": "magnets",
+  "url": "https://zeke.sikelianos.com/magnets",
+  "title": "Magnetism",
+  "wordCount": 688,
+  "textHash": "2247f102c23ca42e3f0b5dfc59aae732c6613506677fbfcc6691e3d11e911e8f",
+  "model": "default",
+  "checkedAt": "2026-08-19T03:31:06.501Z",
+  "stage": "STAGE_SUCCESS",
+  "error": null,
+  "headline": "Human Written",
+  "fractionAi": 0,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 1,
+  "windowsComplete": false,
+  "windows": []
+}

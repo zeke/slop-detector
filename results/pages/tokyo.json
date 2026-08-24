@@ -1,0 +1,18 @@
+{
+  "path": "/tokyo",
+  "slug": "tokyo",
+  "url": "https://zeke.sikelianos.com/tokyo",
+  "title": "Tokyo",
+  "wordCount": 580,
+  "textHash": "c94478486bf0c304f2dc743be3d4e655de8debed3a32f31aace17277611daa9b",
+  "model": "default",
+  "checkedAt": "2026-08-19T03:31:06.501Z",
+  "stage": "STAGE_SUCCESS",
+  "error": null,
+  "headline": "Human Written",
+  "fractionAi": 0,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 1,
+  "windowsComplete": false,
+  "windows": []
+}

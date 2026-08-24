@@ -1,0 +1,18 @@
+{
+  "path": "/heroku",
+  "slug": "heroku",
+  "url": "https://zeke.sikelianos.com/heroku",
+  "title": "Heroku",
+  "wordCount": 106,
+  "textHash": "8893299608fef73eefb1d3f9fbcea580028721dacb987397c6d7862809e886bf",
+  "model": "default",
+  "checkedAt": "2026-08-19T03:31:06.501Z",
+  "stage": "STAGE_SUCCESS",
+  "error": null,
+  "headline": "Human Written",
+  "fractionAi": 0,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 1,
+  "windowsComplete": false,
+  "windows": []
+}

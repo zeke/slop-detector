@@ -1,0 +1,18 @@
+{
+  "path": "/moby",
+  "slug": "moby",
+  "url": "https://zeke.sikelianos.com/moby",
+  "title": "Moby Thesaurus",
+  "wordCount": 121,
+  "textHash": "9067b3dcb2d7f8002793ca2c2e8be2262d82a2255321e08833993d816a0dffb5",
+  "model": "default",
+  "checkedAt": "2026-08-19T03:31:06.501Z",
+  "stage": "STAGE_SUCCESS",
+  "error": null,
+  "headline": "Human Written",
+  "fractionAi": 0,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 1,
+  "windowsComplete": false,
+  "windows": []
+}

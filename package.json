@@ -14,6 +14,7 @@
     "urls": "node bin/slop-detector.js urls",
     "check": "node bin/slop-detector.js check",
     "scan": "node bin/slop-detector.js scan",
+    "backfill": "node bin/slop-detector.js backfill",
     "report": "node bin/slop-detector.js report"
   },
   "dependencies": {

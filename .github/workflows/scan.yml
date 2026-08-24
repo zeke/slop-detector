@@ -1,0 +1,49 @@
+name: scan
+
+on:
+  schedule:
+    # Daily. Extraction is free; Pangram is only called for pages whose prose
+    # changed since the last run, so most days cost nothing.
+    - cron: '17 9 * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: Rescan every page, ignoring content hashes
+        type: boolean
+        default: false
+      max-words:
+        description: Word-count safety cap for this run
+        default: '20000'
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Scan changed pages
+        env:
+          PANGRAM_API_KEY: ${{ secrets.PANGRAM_API_KEY }}
+        run: node bin/slop-detector.js scan --max-words ${{ inputs.max-words || 20000 }} ${{ inputs.force && '--force' || '' }}
+
+      - name: Commit results
+        run: |
+          if [ -z "$(git status --porcelain results)" ]; then
+            echo "No result changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add results
+          git commit -m "chore: update slop detection results"
+          git push
