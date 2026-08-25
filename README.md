@@ -6,6 +6,8 @@ I used this to analyze my own website at [zeke.sikelianos.com](https://zeke.sike
 
 See [zeke.sikelianos.com/slop-detection](https://zeke.sikelianos.com/slop-detection) for the writeup.
 
+Per-page results live in [`results/pages`](./results/pages), and the site links to them from the slop indicator on each page. A [daily workflow](./.github/workflows/scan.yml) re-checks only the pages whose prose changed, since every Pangram call costs money.
+
 See [AGENTS.md](./AGENTS.md) for technical details.
 
 ![Pangram developer dashboard showing usage and spend](./assets/pangram-dashboard.jpg)

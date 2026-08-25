@@ -1,0 +1,18 @@
+{
+  "path": "/wordnik",
+  "slug": "wordnik",
+  "url": "https://zeke.sikelianos.com/wordnik",
+  "title": "Wordnik",
+  "wordCount": 162,
+  "textHash": "5c0b9e78676ad192a5b9d6aafa5bafd806437ad944a81ba0100723cd5b938f9f",
+  "model": "default",
+  "checkedAt": "2026-08-19T03:31:06.501Z",
+  "stage": "STAGE_SUCCESS",
+  "error": null,
+  "headline": "Human Written",
+  "fractionAi": 0,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 1,
+  "windowsComplete": false,
+  "windows": []
+}

@@ -1,0 +1,18 @@
+{
+  "path": "/dial-a-repo",
+  "slug": "dial-a-repo",
+  "url": "https://zeke.sikelianos.com/dial-a-repo",
+  "title": "Dial-a-Repo",
+  "wordCount": 527,
+  "textHash": "4aca33855150e4392216f51f5c340a6094e6f7b326534bd6910211225877a2fc",
+  "model": "default",
+  "checkedAt": "2026-08-19T03:31:06.501Z",
+  "stage": "STAGE_SUCCESS",
+  "error": null,
+  "headline": "Human Written",
+  "fractionAi": 0,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 1,
+  "windowsComplete": false,
+  "windows": []
+}

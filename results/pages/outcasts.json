@@ -1,0 +1,18 @@
+{
+  "path": "/outcasts",
+  "slug": "outcasts",
+  "url": "https://zeke.sikelianos.com/outcasts",
+  "title": "Outcasts",
+  "wordCount": 16920,
+  "textHash": "eefda1bd370e7125fd6d0bb2de49107f19db8494c7592128bb2c338cf6293313",
+  "model": "default",
+  "checkedAt": "2026-08-19T03:31:06.501Z",
+  "stage": "STAGE_SUCCESS",
+  "error": null,
+  "headline": "Human Written",
+  "fractionAi": 0,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 1,
+  "windowsComplete": false,
+  "windows": []
+}

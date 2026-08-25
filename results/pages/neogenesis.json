@@ -1,0 +1,18 @@
+{
+  "path": "/neogenesis",
+  "slug": "neogenesis",
+  "url": "https://zeke.sikelianos.com/neogenesis",
+  "title": "Neogenesis Media",
+  "wordCount": 52,
+  "textHash": "44654a574067b50088917dae1b0a6955f5f2ede100301a3ccaa133b78f84c1b3",
+  "model": "default",
+  "checkedAt": "2026-08-19T03:31:06.501Z",
+  "stage": "STAGE_SUCCESS",
+  "error": null,
+  "headline": "Human Written",
+  "fractionAi": 0,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 1,
+  "windowsComplete": false,
+  "windows": []
+}

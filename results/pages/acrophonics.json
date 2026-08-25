@@ -1,0 +1,18 @@
+{
+  "path": "/acrophonics",
+  "slug": "acrophonics",
+  "url": "https://zeke.sikelianos.com/acrophonics",
+  "title": "Acrophonics",
+  "wordCount": 135,
+  "textHash": "87f177c73d7f5cd5108e11796ddfd3cb01db60ef13d027c0fd136f9f19870f91",
+  "model": "default",
+  "checkedAt": "2026-08-19T03:31:06.501Z",
+  "stage": "STAGE_SUCCESS",
+  "error": null,
+  "headline": "Human Written",
+  "fractionAi": 0,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 1,
+  "windowsComplete": false,
+  "windows": []
+}

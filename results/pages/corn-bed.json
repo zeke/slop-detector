@@ -1,0 +1,18 @@
+{
+  "path": "/corn-bed",
+  "slug": "corn-bed",
+  "url": "https://zeke.sikelianos.com/corn-bed",
+  "title": "The Corn Bed",
+  "wordCount": 222,
+  "textHash": "fb08c1c5f14610fc4aa5f13532b07076238cbd4d30c3455e82ef08e96c8a3075",
+  "model": "default",
+  "checkedAt": "2026-08-19T03:31:06.501Z",
+  "stage": "STAGE_SUCCESS",
+  "error": null,
+  "headline": "Human Written",
+  "fractionAi": 0,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 1,
+  "windowsComplete": false,
+  "windows": []
+}

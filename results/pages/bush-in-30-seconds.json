@@ -1,0 +1,18 @@
+{
+  "path": "/bush-in-30-seconds/index",
+  "slug": "bush-in-30-seconds",
+  "url": "https://zeke.sikelianos.com/bush-in-30-seconds/index",
+  "title": "Bush in 30 Seconds",
+  "wordCount": 70,
+  "textHash": "f3c9af01682b11e0901f25433725725fba99a1da4ab0fcd007421168b5f0e9ea",
+  "model": "default",
+  "checkedAt": "2026-08-19T03:31:06.501Z",
+  "stage": "STAGE_SUCCESS",
+  "error": null,
+  "headline": "Human Written",
+  "fractionAi": 0,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 1,
+  "windowsComplete": false,
+  "windows": []
+}

@@ -1,0 +1,18 @@
+{
+  "path": "/outpainter",
+  "slug": "outpainter",
+  "url": "https://zeke.sikelianos.com/outpainter",
+  "title": "Outpainter",
+  "wordCount": 92,
+  "textHash": "2103c4caf422775eac076650ab7a8aa530bc55958793693b17451f81d243c18c",
+  "model": "default",
+  "checkedAt": "2026-08-19T03:31:06.501Z",
+  "stage": "STAGE_SUCCESS",
+  "error": null,
+  "headline": "Human Written",
+  "fractionAi": 0,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 1,
+  "windowsComplete": false,
+  "windows": []
+}

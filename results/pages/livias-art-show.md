@@ -1,0 +1,23 @@
+# Livia's Art Show
+
+https://zeke.sikelianos.com/livias-art-show
+
+**AI Detected** — 42% AI, 0% AI-assisted, 58% human.
+
+Checked 2026-08-19T03:31:06.501Z with Pangram (model `default`) against 1629 words of prose.
+
+## Passages
+
+Only the flagged passages from this check were saved. The page will show every passage after its next rescan.
+
+### 🤖 AI-Generated
+
+Score 0.93, High confidence.
+
+> Livia Zirkel, talking about art :) My aunt Livia is one of the coolest and most creative people I know. Okay, she's not technically my aunt, but she truly is a multi-talented artist, having worked in a wide variety of media over the years. She paints, she draws, she collages, but most importantly she brings people together to create art. She runs no fewer than three distinct art collectives in Santa Barbara, meeting every week with groups of friends to make art together. It seems like she pretty much knows everyone on the local art scene, having lived in Santa Barbara for over five decades. Last week, Livia hosted her first show since 1986, at the Community Arts Workshop in Santa Barbara. She had over 650 artworks on display, and I helped her photograph, label, title, and price every single piece. Using powerful AI tools and Cloudflare's Developer platform, I was able to build and deploy a complete custom point-of-sale system, just for this one show, in a matter of days. Livia sold over half of her pieces in the course of a weekend, and the whole system ran without a hitch. This is a post to document how I built it, and the tools I used to do it. Matilija poppy painting by Livia Zirkel How I built it This project was spontaneous! I didn't sit down and design a schema or sketch a wireframe before writing anything. I just opened a terminal, started chatting with Pi, and described the problem in front of me: my aunt has hundreds of pieces of art, no way to track them, and a show in a few days. From there it was a conversation, not a plan. I'd describe what I needed in plain English, the agent would go read the existing code, ask clarifying questions when something was ambiguous, and then write and test the change itself, right down to opening a browser and clicking around to make sure it worked. Most sessions started with something small and real, not hypothetical. "The list of pieces is getting long, let's add a filter." "I need to mark five pieces sold to one buyer at once." "This photo is crooked, can we straighten it without leaving the browser."
+
+### 🤖 AI-Generated
+
+Score 0.85, High confidence.
+
+>  Because Livia and I were actually using the tool to catalog real artwork while I was building it, every feature request came from something that had just gotten annoying in practice, not from imagining what a point-of-sale system "should" have. That's the biggest difference between this and how I used to build software: I wasn't writing code, I was narrating a problem and reviewing the solution. The design followed the same instinct. The public site is a plain, whitespace-heavy grid of art, because a room full of paintings doesn't need a UI framework competing for attention. The admin side went the opposite direction: dense, mobile-first, built for someone standing at a folding table with a phone in one hand and a buyer in the other, checking pieces out as fast as possible. A lot of that shape emerged live, mid-conversation, after actually trying to use the thing during a real sale. Giving an AI agent this much rope means it will occasionally take a wrong turn, and mine did: at one point I asked it to help clean up some sold pieces, and a few days of transaction history briefly vanished before I recovered it from an uncommitted branch. The lesson wasn't "don't trust the agent," it was the same lesson every developer has learned since git existed: commit early, commit often, and don't deploy from a dirty working tree. I wrote that rule down for the agent too, in a project file it reads at the start of every session, so it wouldn't happen again. The lesson there for me was: Don't try to do too many things at once on the same project, even if you think they're distinct enough tasks to not intersect. Radishes The tools Here's a breakdown of the tools I used to build the whole thing, and why I chose them. 1. Pi Pi is the coding agent harness that gives you a chat interface to an AI model.

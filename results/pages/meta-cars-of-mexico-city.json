@@ -1,0 +1,18 @@
+{
+  "path": "/meta-cars-of-mexico-city",
+  "slug": "meta-cars-of-mexico-city",
+  "url": "https://zeke.sikelianos.com/meta-cars-of-mexico-city",
+  "title": "Meta Cars of Mexico City",
+  "wordCount": 66,
+  "textHash": "714afafde087135d5d5e047fac870b62ec617c5bebcef7c36afd88c0246027c8",
+  "model": "default",
+  "checkedAt": "2026-08-19T03:31:06.501Z",
+  "stage": "STAGE_SUCCESS",
+  "error": null,
+  "headline": "Human Written",
+  "fractionAi": 0,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 1,
+  "windowsComplete": false,
+  "windows": []
+}

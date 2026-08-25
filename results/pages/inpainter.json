@@ -1,0 +1,18 @@
+{
+  "path": "/inpainter",
+  "slug": "inpainter",
+  "url": "https://zeke.sikelianos.com/inpainter",
+  "title": "Inpainter",
+  "wordCount": 60,
+  "textHash": "58f62b3ae7d084e990026f034ff3733309b317c8ea1400e21968371c719ec1b0",
+  "model": "default",
+  "checkedAt": "2026-08-19T03:31:06.501Z",
+  "stage": "STAGE_SUCCESS",
+  "error": null,
+  "headline": "Human Written",
+  "fractionAi": 0,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 1,
+  "windowsComplete": false,
+  "windows": []
+}

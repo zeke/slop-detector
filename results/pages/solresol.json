@@ -1,0 +1,18 @@
+{
+  "path": "/solresol",
+  "slug": "solresol",
+  "url": "https://zeke.sikelianos.com/solresol",
+  "title": "Solresol",
+  "wordCount": 134,
+  "textHash": "da68a835f76930153713a1a7196d7960464348155fd6ce8a22c69977970a974b",
+  "model": "default",
+  "checkedAt": "2026-08-19T03:31:06.501Z",
+  "stage": "STAGE_SUCCESS",
+  "error": null,
+  "headline": "Human Written",
+  "fractionAi": 0,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 1,
+  "windowsComplete": false,
+  "windows": []
+}

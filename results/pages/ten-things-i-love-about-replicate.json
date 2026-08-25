@@ -1,0 +1,18 @@
+{
+  "path": "/ten-things-i-love-about-replicate",
+  "slug": "ten-things-i-love-about-replicate",
+  "url": "https://zeke.sikelianos.com/ten-things-i-love-about-replicate",
+  "title": "Ten things I love about Replicate",
+  "wordCount": 2169,
+  "textHash": "2902952c78f3c822cccb845b13b0cbb03e2490f7ba29c690eff15cd2f9966803",
+  "model": "default",
+  "checkedAt": "2026-08-19T03:31:06.501Z",
+  "stage": "STAGE_SUCCESS",
+  "error": null,
+  "headline": "Human Written",
+  "fractionAi": 0,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 1,
+  "windowsComplete": false,
+  "windows": []
+}

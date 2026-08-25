@@ -1,0 +1,18 @@
+{
+  "path": "/twenty-years-with-javascript",
+  "slug": "twenty-years-with-javascript",
+  "url": "https://zeke.sikelianos.com/twenty-years-with-javascript",
+  "title": "Twenty Years with JavaScript",
+  "wordCount": 1248,
+  "textHash": "5255a45185ada5e1cf682a42cab2a1af364820d53d566402f1689aca5cc43482",
+  "model": "default",
+  "checkedAt": "2026-08-19T03:31:06.501Z",
+  "stage": "STAGE_SUCCESS",
+  "error": null,
+  "headline": "Human Written",
+  "fractionAi": 0,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 1,
+  "windowsComplete": false,
+  "windows": []
+}

@@ -1,0 +1,18 @@
+{
+  "path": "/ord",
+  "slug": "ord",
+  "url": "https://zeke.sikelianos.com/ord",
+  "title": "Ord",
+  "wordCount": 81,
+  "textHash": "3eb2c1c5763be8170fab65aab17a1c06628f5a30284724acb782581f2bac03fc",
+  "model": "default",
+  "checkedAt": "2026-08-19T03:31:06.501Z",
+  "stage": "STAGE_SUCCESS",
+  "error": null,
+  "headline": "Human Written",
+  "fractionAi": 0,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 1,
+  "windowsComplete": false,
+  "windows": []
+}

@@ -1,0 +1,18 @@
+{
+  "path": "/kontext-realtime",
+  "slug": "kontext-realtime",
+  "url": "https://zeke.sikelianos.com/kontext-realtime",
+  "title": "Kontext Realtime",
+  "wordCount": 757,
+  "textHash": "423874bde67a48962271942b36d4c813af59083cfca2775df7b15fc200a6f8e8",
+  "model": "default",
+  "checkedAt": "2026-08-19T03:31:06.501Z",
+  "stage": "STAGE_SUCCESS",
+  "error": null,
+  "headline": "Human Written",
+  "fractionAi": 0,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 1,
+  "windowsComplete": false,
+  "windows": []
+}

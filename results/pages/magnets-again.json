@@ -1,0 +1,18 @@
+{
+  "path": "/magnets-again",
+  "slug": "magnets-again",
+  "url": "https://zeke.sikelianos.com/magnets-again",
+  "title": "Magnets, again.",
+  "wordCount": 50,
+  "textHash": "742d6a47eb32e36ea6c3f57486bd7448469e4e282bbaf21abc776ea11ddd043e",
+  "model": "default",
+  "checkedAt": "2026-08-19T03:31:06.501Z",
+  "stage": "STAGE_SUCCESS",
+  "error": null,
+  "headline": "Human Written",
+  "fractionAi": 0,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 1,
+  "windowsComplete": false,
+  "windows": []
+}

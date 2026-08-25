@@ -1,0 +1,18 @@
+{
+  "path": "/github",
+  "slug": "github",
+  "url": "https://zeke.sikelianos.com/github",
+  "title": "It's my first day at GitHub",
+  "wordCount": 151,
+  "textHash": "353f3f6ea71b75aca50d53e921745ed155317372c6e49f9225fb32c655d3b13b",
+  "model": "default",
+  "checkedAt": "2026-08-19T03:31:06.501Z",
+  "stage": "STAGE_SUCCESS",
+  "error": null,
+  "headline": "Human Written",
+  "fractionAi": 0,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 1,
+  "windowsComplete": false,
+  "windows": []
+}

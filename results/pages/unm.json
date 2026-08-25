@@ -1,0 +1,18 @@
+{
+  "path": "/unm",
+  "slug": "unm",
+  "url": "https://zeke.sikelianos.com/unm",
+  "title": "University of New Mexico",
+  "wordCount": 65,
+  "textHash": "08bc01bcf668e960f3ada1fa8064b9840030432f0430cd67c5bbb5d59abd3364",
+  "model": "default",
+  "checkedAt": "2026-08-19T03:31:06.501Z",
+  "stage": "STAGE_SUCCESS",
+  "error": null,
+  "headline": "Human Written",
+  "fractionAi": 0,
+  "fractionAiAssisted": 0,
+  "fractionHuman": 1,
+  "windowsComplete": false,
+  "windows": []
+}
