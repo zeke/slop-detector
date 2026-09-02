@@ -25,7 +25,7 @@ and why.
 - `src/pangram.js` — thin client for the Pangram REST API (single `predict()`, bulk job flow, plagiarism check)
 - `src/report.js` — turns Pangram results into per-page records, per-page markdown, and the site table
 - `src/results.js` — reads/writes `results/`, builds `latest.json`, owns the public `dataUrl()` link format
-- `.github/workflows/scan.yml` — daily incremental scan that commits changed results
+- `.github/workflows/scan.yml` — incremental scan that commits changed results; the daily cron is commented out, so it only runs on manual dispatch
 
 ## Results layout
 
@@ -107,6 +107,6 @@ If the site's markup changes (e.g. renamed classes), update the selectors in
 - The website at zeke.sikelianos.com reads `results/latest.json` on a schedule
   and commits it as `data/slop.json`, which triggers a deploy. Changing the shape
   of `latest.json` breaks that sync; see `script/sync-slop` in the website repo.
-- The daily scan needs `PANGRAM_API_KEY` as an Actions secret in this repo.
+- The scan workflow needs `PANGRAM_API_KEY` as an Actions secret in this repo.
 - Pangram has no documented endpoint for checking remaining account credit
   balance; check https://www.pangram.com/plan manually before a big `scan`.

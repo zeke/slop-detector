@@ -1,10 +1,10 @@
 name: scan
 
 on:
-  schedule:
-    # Daily. Extraction is free; Pangram is only called for pages whose prose
-    # changed since the last run, so most days cost nothing.
-    - cron: '17 9 * * *'
+  # Scheduled runs are disabled to avoid Pangram billing. Re-enable by
+  # uncommenting the schedule block below.
+  # schedule:
+  #   - cron: '17 9 * * *'
   workflow_dispatch:
     inputs:
       force:
